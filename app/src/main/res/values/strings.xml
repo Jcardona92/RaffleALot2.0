@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RaffleALot2.0</string>
+    <string-array name="Types">
+        <item>FREE</item>
+        <item>Dollar</item>
+        <item>GeneratedAmount</item>
+    </string-array>
+</resources>

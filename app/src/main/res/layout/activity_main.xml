@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.csudh.jcardona2toromail.rafflealot20.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/USernameId_login"
+        android:text="UserName : "
+        android:textSize="20dp"
+        tools:layout_editor_absoluteY="63dp"
+        tools:layout_editor_absoluteX="39dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="74dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userid_login"
+        android:hint="Enter UserName"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/USernameId_login"
+        android:layout_alignBottom="@+id/USernameId_login"
+        android:layout_toRightOf="@+id/USernameId_login"
+        android:layout_toEndOf="@+id/USernameId_login"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pwd_login"
+        android:text="Password : "
+        android:textSize="20dp"
+
+        android:layout_below="@+id/userid_login"
+        android:layout_alignLeft="@+id/USernameId_login"
+        android:layout_alignStart="@+id/USernameId_login"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@+id/userid_login"
+        android:layout_toStartOf="@+id/userid_login"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PWD_login"
+        android:hint="Enter Password "
+        android:inputType="textPassword"
+        android:ems="10"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/pwd_login"
+        android:layout_alignLeft="@+id/userid_login"
+        android:layout_alignStart="@+id/userid_login"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:padding="15dp"
+        android:gravity="center"
+        android:id="@+id/button_login"
+        android:layout_below="@+id/PWD_login"
+        android:layout_alignRight="@+id/pwd_login"
+        android:layout_alignEnd="@+id/pwd_login"
+        android:layout_marginTop="147dp"
+        android:onClick="onLogin"/>
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/button_register"
+        android:padding="15dp"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/button_login"
+        android:layout_alignRight="@+id/userid_login"
+        android:layout_alignEnd="@+id/userid_login"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        />
+
+</RelativeLayout>

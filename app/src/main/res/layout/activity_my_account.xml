@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.csudh.jcardona2toromail.rafflealot20.MyAccountActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Name: "
+        android:id="@+id/Account_Name"
+        android:textSize="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name "
+        android:id="@+id/acct_name"
+        android:layout_alignBaseline="@+id/Account_Name"
+        android:layout_alignBottom="@+id/Account_Name"
+        android:layout_toRightOf="@+id/Account_Name"
+        android:layout_toEndOf="@+id/Account_Name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Account_Address"
+        android:text="Address:"
+        android:textSize="20dp"
+        android:layout_below="@+id/acct_name"
+        android:layout_toLeftOf="@+id/acct_name"
+        android:layout_toStartOf="@+id/acct_name"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Address"
+        android:id="@+id/acct_address"
+        android:layout_alignBaseline="@+id/Account_Address"
+        android:layout_alignBottom="@+id/Account_Address"
+        android:layout_toRightOf="@+id/Account_Address"
+        android:layout_toEndOf="@+id/Account_Address"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Account_username"
+        android:text="Username:"
+        android:textSize="20dp"
+
+        android:layout_below="@+id/acct_address"
+        android:layout_alignLeft="@+id/Account_Address"
+        android:layout_alignStart="@+id/Account_Address"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="20dp"
+        android:id="@+id/Account_password"
+
+        android:layout_below="@+id/Account_username"
+        android:layout_alignRight="@+id/Account_username"
+        android:layout_alignEnd="@+id/Account_username"
+        android:layout_marginTop="14dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/Account_BSubmit"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_marginBottom="126dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+</RelativeLayout>

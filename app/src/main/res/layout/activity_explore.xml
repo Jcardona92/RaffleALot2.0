@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.csudh.jcardona2toromail.rafflealot20.ExploreActivity">
+
+    <TextView
+        android:id="@+id/Title_Explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Title_Explore"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/scrollView2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/explore_item1"
+                android:src="@drawable/hydroflask"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hydro Flask"
+                android:id="@+id/explore_item1Title"
+
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/explore_item1"
+                android:layout_toEndOf="@+id/explore_item1"
+                android:layout_marginTop="17dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tickets Available:45"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/explore_item1Title"
+                android:layout_toRightOf="@+id/explore_item1"
+                android:layout_toEndOf="@+id/explore_item1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type: Dollar "
+                android:id="@+id/explore_itemType1"
+                android:layout_below="@+id/textView2"
+                android:layout_toRightOf="@+id/explore_item1"
+                android:layout_toEndOf="@+id/explore_item1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: 04/29/2017 To 05/15/2017"
+                android:layout_below="@+id/explore_itemType1"
+                android:layout_toRightOf="@+id/explore_item1"
+                android:layout_toEndOf="@+id/explore_item1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View"
+                android:id="@+id/explore_item1Button"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/explore_item2"
+                android:src="@drawable/keychain"
+                android:layout_below="@+id/explore_item1"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_toEndOf="@+id/textView3" />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/explore_item3"
+                android:src="@drawable/note5"
+                android:layout_below="@+id/explore_item2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_titleitem3"
+                android:text="Samsung Note 5"
+                android:layout_below="@+id/explore_item2"
+                android:layout_alignLeft="@+id/explore_dateitem2"
+                android:layout_alignStart="@+id/explore_dateitem2"
+                android:layout_marginTop="14dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_ticket3"
+                android:text="Tickets Available: 25"
+
+                android:layout_below="@+id/explore_titleitem3"
+                android:layout_alignLeft="@+id/explore_titleitem3"
+                android:layout_alignStart="@+id/explore_titleitem3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_itemType3"
+                android:text="Type: GAmount"
+                android:layout_below="@+id/explore_ticket3"
+                android:layout_alignLeft="@+id/explore_ticket3"
+                android:layout_alignStart="@+id/explore_ticket3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_dateitem3"
+                android:text="Date: 04/29/2017 To 05/30/2017"
+                android:layout_below="@+id/explore_itemType3"
+                android:layout_alignLeft="@+id/explore_itemType3"
+                android:layout_alignStart="@+id/explore_itemType3"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View"
+                android:id="@+id/button3"
+                android:layout_alignTop="@+id/explore_titleitem3"
+                android:layout_alignLeft="@+id/button2"
+                android:layout_alignStart="@+id/button2" />
+
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/explore_item4"
+                android:src="@drawable/kdot"
+
+                android:layout_below="@+id/explore_item3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_item4Title"
+                android:text="KDot Damn Album "
+                android:layout_below="@+id/explore_item3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_itemtickets4"
+                android:text="Tickets Available: 13"
+                android:layout_below="@+id/explore_item4Title"
+                android:layout_alignLeft="@+id/explore_item4Title"
+                android:layout_alignStart="@+id/explore_item4Title"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_itemType4"
+                android:text="Type: Dollar"
+                android:layout_below="@+id/explore_itemtickets4"
+                android:layout_alignLeft="@+id/explore_itemtickets4"
+                android:layout_alignStart="@+id/explore_itemtickets4" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_dateitem4"
+                android:text="Date: 04/20/2017 To 05/20/2017"
+                android:layout_below="@+id/explore_itemType4"
+                android:layout_alignLeft="@+id/explore_itemType4"
+                android:layout_alignStart="@+id/explore_itemType4"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_item4Button"
+                android:text="View"
+                android:layout_below="@+id/explore_item3"
+                android:layout_alignLeft="@+id/button3"
+                android:layout_alignStart="@+id/button3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_titleitem2"
+                android:text="Keychain"
+
+                android:layout_below="@+id/explore_item1"
+                android:layout_alignRight="@+id/explore_item1Title"
+                android:layout_alignEnd="@+id/explore_item1Title"
+                android:layout_marginTop="11dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_itemType2"
+                android:text="Tickets Available : 5"
+                android:layout_below="@+id/explore_titleitem2"
+                android:layout_alignLeft="@+id/explore_titleitem2"
+                android:layout_alignStart="@+id/explore_titleitem2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_itemt2"
+                android:text="Type: FREE"
+                android:layout_below="@+id/explore_itemType2"
+                android:layout_alignLeft="@+id/explore_itemType2"
+                android:layout_alignStart="@+id/explore_itemType2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_dateitem2"
+                android:text="Date: 04/23/2017 To 05/29/2017"
+                android:layout_below="@+id/explore_itemt2"
+                android:layout_alignLeft="@+id/explore_itemt2"
+                android:layout_alignStart="@+id/explore_itemt2"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View"
+                android:layout_alignBaseline="@+id/explore_titleitem2"
+                android:layout_alignBottom="@+id/explore_titleitem2"
+                android:layout_alignLeft="@+id/explore_item1Button"
+                android:layout_alignStart="@+id/explore_item1Button"
+                android:id="@+id/button2"
+                />
+
+
+        </RelativeLayout>>
+
+    </ScrollView>
+
+
+</RelativeLayout>

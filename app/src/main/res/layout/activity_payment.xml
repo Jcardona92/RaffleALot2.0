@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.csudh.jcardona2toromail.rafflealot20.PaymentActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Payment_header"
+        android:text="Payment"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Payment_Cn"
+        android:text="Card Name:"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/payment_CardNumber"
+        android:layout_alignLeft="@+id/payment_CardNumber"
+        android:layout_alignStart="@+id/payment_CardNumber"
+        android:layout_marginBottom="29dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment_EditTextCardname"
+        android:hint="Enter Card Name"
+        android:layout_alignBaseline="@+id/Payment_Cn"
+        android:layout_alignBottom="@+id/Payment_Cn"
+        android:layout_toRightOf="@+id/payment_EditTextExpdate"
+        android:layout_toEndOf="@+id/payment_EditTextExpdate" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment_CardNumber"
+        android:text="Card Number:"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/Payment_header"
+        android:layout_toStartOf="@+id/Payment_header" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment_EditTextCardNumber"
+        android:hint="Enter Card Number"
+        android:layout_alignBaseline="@+id/payment_CardNumber"
+        android:layout_alignBottom="@+id/payment_CardNumber"
+        android:layout_toRightOf="@+id/payment_EditTextExpdate"
+        android:layout_toEndOf="@+id/payment_EditTextExpdate"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment_expdate"
+        android:text="EXP:"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/payment_CardNumber"
+        android:layout_alignLeft="@+id/payment_CardNumber"
+        android:layout_alignStart="@+id/payment_CardNumber" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="MM/YY"
+        android:id="@+id/payment_EditTextExpdate"
+        android:layout_alignBaseline="@+id/payment_expdate"
+        android:layout_alignBottom="@+id/payment_expdate"
+        android:layout_toRightOf="@+id/payment_expdate"
+        android:layout_toEndOf="@+id/payment_expdate"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment_CVSCode"
+        android:text="CVS:"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/payment_EditTextExpdate"
+        android:layout_alignBottom="@+id/payment_EditTextExpdate"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment_EditTextCVS"
+        android:hint="***"
+        android:layout_alignBaseline="@+id/payment_CVSCode"
+        android:layout_alignBottom="@+id/payment_CVSCode"
+        android:layout_toRightOf="@+id/Payment_header"
+        android:layout_toEndOf="@+id/Payment_header" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment_submitButton"
+        android:text="Submit"
+        android:layout_alignBaseline="@+id/payment_CancelButton"
+        android:layout_alignBottom="@+id/payment_CancelButton"
+        android:layout_alignRight="@+id/payment_CVSCode"
+        android:layout_alignEnd="@+id/payment_CVSCode"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment_CancelButton"
+        android:text="Cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/payment_EditTextCVS"
+        android:layout_toEndOf="@+id/payment_EditTextCVS"
+        android:layout_marginBottom="32dp"
+        />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@+id/payment_EditTextCardname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/Payment_Logo"
+        android:src="@drawable/logo"
+        />
+
+
+
+
+
+
+</RelativeLayout>

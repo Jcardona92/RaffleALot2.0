@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.csudh.jcardona2toromail.rafflealot20.ListingActivity"
+
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take PHOTO"
+        android:id="@+id/Listing_Buttonphoto"
+        android:layout_marginBottom="53dp"
+        android:layout_alignBottom="@+id/Listing_Photo"
+        android:layout_toRightOf="@+id/Listing_Photo"
+        android:layout_toEndOf="@+id/Listing_Photo"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp" />
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="220dp"
+        android:id="@+id/Listing_Photo"
+        android:scaleType="centerInside"
+
+        android:layout_below="@+id/Date_selected"
+        android:layout_toRightOf="@+id/Date_selected"
+        android:layout_toEndOf="@+id/Date_selected"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/Listing_Itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Item Name: "
+
+
+        android:textSize="20dp"
+        android:layout_below="@+id/Listing_Photo"
+        android:layout_alignLeft="@+id/Listing_Photo"
+        android:layout_alignStart="@+id/Listing_Photo"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Listing_name"
+        android:hint="NAME"
+        android:layout_alignBaseline="@+id/Listing_Itemname"
+        android:layout_alignBottom="@+id/Listing_Itemname"
+        android:layout_toRightOf="@+id/Listing_Itemname"
+        android:layout_toEndOf="@+id/Listing_Itemname"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Listing_spinner"
+
+
+        android:layout_below="@+id/Listing_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp">
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date:"
+        android:id="@+id/Listing_startdate"
+        android:layout_below="@+id/Listing_spinner"
+        android:layout_alignLeft="@+id/Listing_Itemname"
+        android:layout_alignStart="@+id/Listing_Itemname"
+        android:layout_marginTop="11dp"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="MM/DD/YY"
+        android:textSize="15dp"
+        android:layout_below="@+id/Listing_spinner"
+        android:layout_alignRight="@+id/Listing_Photo"
+        android:layout_alignEnd="@+id/Listing_Photo"
+        android:id="@+id/editText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Date_selected"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Listing_enddate"
+        android:text="End Date:"
+        android:layout_below="@+id/Listing_startdate"
+        android:layout_alignLeft="@+id/Listing_startdate"
+        android:layout_alignStart="@+id/Listing_startdate"
+        android:layout_marginTop="31dp"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="MM/DD/YY"
+        android:textSize="15dp"
+        android:layout_alignBottom="@+id/Listing_enddate"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Listing_SubmitB"
+        android:text="Submit"
+        android:padding="2dp"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp" />
+
+
+
+
+
+</RelativeLayout>
